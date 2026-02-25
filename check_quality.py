@@ -16,7 +16,7 @@ def pylint(fichier_path):
 def main():
     if len(sys.argv) != 2 :
         print("Usage : python check_quality.py <chemin>")
-        sys.exist(1)
+        sys.exit(1)
     
     fichier = sys.argv[1]
     code = pylint(fichier)
